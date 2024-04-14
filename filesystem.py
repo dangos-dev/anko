@@ -3,11 +3,9 @@ import json
 from flask import send_file
 
 
-DATA_PATH = f'./static/data'
-IMAGE_PATH = f'./static/images'
+DATA_PATH = f'.\\static\\data'
+IMAGE_PATH = f'.\\static\\images'
 DEFAULT_LANG = 'en'
-
-
 
 
 class Filesystem:

@@ -55,7 +55,6 @@ def images(endpoint, entity):
 
 @app.route('/<endpoint>/<entity>/<image>')
 @app.route('/<endpoint>/<entity>/<image>/<format>')
-@cache.cached()
 def image(endpoint, entity, image, format='webp'):
     return fsy.getImage(endpoint, entity, image, format)
 
